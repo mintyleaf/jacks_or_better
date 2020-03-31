@@ -1,0 +1,663 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://assets/graphics/BG.png" type="Texture" id=1]
+[ext_resource path="res://assets/scripts/main.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/hardpixel.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/fonts/hardpixel.otf" type="DynamicFontData" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 2
+border_width_bottom = 4
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+bg_color = Color( 0.458824, 0, 0, 1 )
+draw_center = false
+border_width_left = 2
+border_width_top = 4
+border_width_right = 2
+border_width_bottom = 4
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+bg_color = Color( 0.458824, 0, 0, 1 )
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+expand_margin_left = 14.0
+expand_margin_right = 14.0
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id=5]
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+bg_color = Color( 0.458824, 0, 0, 1 )
+draw_center = false
+border_width_left = 2
+border_width_top = 4
+border_width_right = 2
+border_width_bottom = 4
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+bg_color = Color( 0.458824, 0, 0, 1 )
+draw_center = false
+border_width_left = 2
+border_width_top = 4
+border_width_right = 2
+border_width_bottom = 4
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+bg_color = Color( 0.458824, 0, 0, 1 )
+draw_center = false
+border_width_left = 2
+border_width_top = 4
+border_width_right = 2
+border_width_bottom = 4
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+bg_color = Color( 0.458824, 0, 0, 1 )
+draw_center = false
+border_width_left = 2
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+content_margin_left = 16.0
+content_margin_right = 16.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+bg_color = Color( 0.458824, 0, 0, 1 )
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+expand_margin_left = 14.0
+expand_margin_right = 12.0
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id=11]
+content_margin_left = 12.0
+content_margin_right = 12.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.917647, 0.458824, 0, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.458824, 0, 0, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 2
+
+[sub_resource type="StyleBoxFlat" id=12]
+content_margin_left = 12.0
+content_margin_right = 12.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.227451, 0, 0, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 2
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+[sub_resource type="StyleBoxFlat" id=14]
+content_margin_left = 12.0
+content_margin_right = 12.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.227451, 0.227451, 0.227451, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.458824, 0.458824, 0.458824, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 2
+
+[sub_resource type="StyleBoxFlat" id=15]
+content_margin_left = 12.0
+content_margin_right = 12.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.458824, 0, 0, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.917647, 0.458824, 0, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 2
+
+[sub_resource type="DynamicFont" id=10]
+size = 20
+outline_size = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 4 )
+
+[node name="main" type="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.16638
+margin_right = 1.16638
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="tw" type="Tween" parent="."]
+
+[node name="tableholder" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -481.0
+margin_top = -292.0
+margin_right = 479.0
+margin_bottom = -76.0
+custom_constants/separation = 0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="combos" type="PanelContainer" parent="tableholder"]
+margin_left = 3.0
+margin_right = 207.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 150, 0 )
+custom_styles/panel = SubResource( 2 )
+
+[node name="text" type="Label" parent="tableholder/combos"]
+margin_left = 16.0
+margin_top = 11.0
+margin_right = 188.0
+margin_bottom = 205.0
+custom_fonts/font = ExtResource( 3 )
+custom_constants/line_spacing = -5
+text = "ROYAL FLUSH
+STRAIGHT FLUSH
+FOUR OF A KIND
+FULL HOUSE
+FLUSH
+STRAIGHT
+THREE OF A KIND
+TWO PAIRS
+JACKS OR BETTER"
+valign = 1
+
+[node name="bet_1" type="PanelContainer" parent="tableholder"]
+margin_left = 207.0
+margin_right = 357.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 150, 0 )
+custom_styles/panel = SubResource( 3 )
+
+[node name="bg" type="Panel" parent="tableholder/bet_1"]
+visible = false
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 134.0
+margin_bottom = 208.0
+custom_styles/panel = SubResource( 4 )
+
+[node name="text" type="Label" parent="tableholder/bet_1"]
+margin_left = 16.0
+margin_top = 11.0
+margin_right = 134.0
+margin_bottom = 205.0
+custom_fonts/font = ExtResource( 3 )
+custom_constants/line_spacing = -5
+text = "250$
+50$
+25$
+9$
+6$
+4$
+3$
+2$
+1$"
+align = 2
+valign = 1
+
+[node name="bet_2" type="PanelContainer" parent="tableholder"]
+margin_left = 357.0
+margin_right = 507.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 150, 0 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="bg" type="Panel" parent="tableholder/bet_2"]
+visible = false
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 134.0
+margin_bottom = 208.0
+custom_styles/panel = SubResource( 4 )
+
+[node name="text" type="Label" parent="tableholder/bet_2"]
+margin_left = 16.0
+margin_top = 11.0
+margin_right = 134.0
+margin_bottom = 205.0
+custom_fonts/font = ExtResource( 3 )
+custom_constants/line_spacing = -5
+text = "500$
+100$
+50$
+18$
+12$
+8$
+6$
+4$
+2$"
+align = 2
+valign = 1
+
+[node name="bet_3" type="PanelContainer" parent="tableholder"]
+margin_left = 507.0
+margin_right = 657.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 150, 0 )
+custom_styles/panel = SubResource( 6 )
+
+[node name="bg" type="Panel" parent="tableholder/bet_3"]
+visible = false
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 134.0
+margin_bottom = 208.0
+custom_styles/panel = SubResource( 4 )
+
+[node name="text" type="Label" parent="tableholder/bet_3"]
+margin_left = 16.0
+margin_top = 11.0
+margin_right = 134.0
+margin_bottom = 205.0
+custom_fonts/font = ExtResource( 3 )
+custom_constants/line_spacing = -5
+text = "750$
+150$
+75$
+27$
+18$
+12$
+9$
+6$
+3$"
+align = 2
+valign = 1
+
+[node name="bet_4" type="PanelContainer" parent="tableholder"]
+margin_left = 657.0
+margin_right = 807.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 150, 0 )
+custom_styles/panel = SubResource( 7 )
+
+[node name="bg" type="Panel" parent="tableholder/bet_4"]
+visible = false
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 134.0
+margin_bottom = 208.0
+custom_styles/panel = SubResource( 4 )
+
+[node name="text" type="Label" parent="tableholder/bet_4"]
+margin_left = 16.0
+margin_top = 11.0
+margin_right = 134.0
+margin_bottom = 205.0
+custom_fonts/font = ExtResource( 3 )
+custom_constants/line_spacing = -5
+text = "1000$
+200$
+100$
+36$
+24$
+16$
+12$
+8$
+4$"
+align = 2
+valign = 1
+
+[node name="bet_5" type="PanelContainer" parent="tableholder"]
+margin_left = 807.0
+margin_right = 957.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 150, 0 )
+custom_styles/panel = SubResource( 8 )
+
+[node name="bg" type="Panel" parent="tableholder/bet_5"]
+visible = false
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 134.0
+margin_bottom = 208.0
+custom_styles/panel = SubResource( 9 )
+
+[node name="text" type="Label" parent="tableholder/bet_5"]
+margin_left = 16.0
+margin_top = 11.0
+margin_right = 134.0
+margin_bottom = 205.0
+custom_fonts/font = ExtResource( 3 )
+custom_constants/line_spacing = -5
+text = "4000$
+250$
+125$
+45$
+30$
+20$
+15$
+10$
+5$"
+align = 2
+valign = 1
+
+[node name="cardholder" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -481.166
+margin_top = -28.0
+margin_right = 478.834
+margin_bottom = 226.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="TextureRect" parent="cardholder"]
+margin_left = 14.0
+margin_right = 197.0
+margin_bottom = 254.0
+rect_pivot_offset = Vector2( 91, 0 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HOLD" type="Label" parent="cardholder/0"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -87.5
+margin_right = 88.5
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 3 )
+text = "HOLD"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TextureRect" parent="cardholder"]
+margin_left = 201.0
+margin_right = 384.0
+margin_bottom = 254.0
+rect_pivot_offset = Vector2( 91, 0 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HOLD" type="Label" parent="cardholder/1"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -87.5
+margin_right = 88.5
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 3 )
+text = "HOLD"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="2" type="TextureRect" parent="cardholder"]
+margin_left = 388.0
+margin_right = 571.0
+margin_bottom = 254.0
+rect_pivot_offset = Vector2( 91, 0 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HOLD" type="Label" parent="cardholder/2"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -87.5
+margin_right = 88.5
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 3 )
+text = "HOLD"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="3" type="TextureRect" parent="cardholder"]
+margin_left = 575.0
+margin_right = 758.0
+margin_bottom = 254.0
+rect_pivot_offset = Vector2( 91, 0 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HOLD" type="Label" parent="cardholder/3"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -87.5
+margin_right = 88.5
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 3 )
+text = "HOLD"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="4" type="TextureRect" parent="cardholder"]
+margin_left = 762.0
+margin_right = 945.0
+margin_bottom = 254.0
+rect_pivot_offset = Vector2( 91, 0 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HOLD" type="Label" parent="cardholder/4"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -87.5
+margin_right = 88.5
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 3 )
+text = "HOLD"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="buttons" type="HBoxContainer" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = 236.0
+margin_right = -1.0
+margin_bottom = 284.0
+custom_constants/separation = 20
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bet" type="Label" parent="buttons"]
+margin_left = 139.0
+margin_top = 11.0
+margin_right = 259.0
+margin_bottom = 37.0
+rect_min_size = Vector2( 120, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = "BET: 1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="bet_one" type="Button" parent="buttons"]
+margin_left = 279.0
+margin_right = 419.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 140, 0 )
+custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/focus = SubResource( 13 )
+custom_styles/disabled = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+custom_fonts/font = ExtResource( 3 )
+text = "Bet One"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="bet_max" type="Button" parent="buttons"]
+margin_left = 439.0
+margin_right = 584.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 145, 0 )
+custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/focus = SubResource( 13 )
+custom_styles/disabled = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+custom_fonts/font = ExtResource( 3 )
+text = "Bet Max"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="deal" type="Button" parent="buttons"]
+margin_left = 604.0
+margin_right = 744.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 140, 0 )
+custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/focus = SubResource( 13 )
+custom_styles/disabled = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+custom_fonts/font = ExtResource( 3 )
+text = "Deal"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="balance" type="Label" parent="buttons"]
+margin_left = 764.0
+margin_top = 11.0
+margin_right = 884.0
+margin_bottom = 37.0
+rect_min_size = Vector2( 120, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = "100$"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="win" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -1.16638
+margin_top = -20.0
+margin_right = -1.16638
+margin_bottom = 12.0
+rect_pivot_offset = Vector2( 512, 16 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 1, 0.917647, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.458824, 0, 0, 1 )
+text = "FLUSH!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
